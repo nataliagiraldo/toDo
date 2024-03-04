@@ -13,6 +13,7 @@ main {
     justify-content: center;
     row-gap: 4vh;
     column-gap: 4vw;
+    background-color: azure;
 }
 
 .createTask {
@@ -27,24 +28,11 @@ main {
 .pendingTasks {
     width: 80vw;
     padding: 5%;
-    background-color: blue;
+    background-color: rgba(79, 79, 85, 0.257);
     border-radius: 20px;
 
 }
 
-.fulfilledTasks {
-    width: 33vw;
-    padding: 5%;
-    background-color: aqua;
-    border-radius: 20px;
-}
-
-.failedTasks {
-    width: 33vw;
-    padding: 5%;
-    background-color: blueviolet;
-    border-radius: 20px;
-}
 
 #tareaNueva {
     width: 80%;
