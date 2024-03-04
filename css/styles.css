@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vh;
+    column-gap: 4vw;
+}
+
+.createTask {
+    width: 80vw;
+    padding: 5%;
+    background-color: rgba(32, 65, 106, 0.488);
+    border-radius: 20px;
+
+
+}
+
+.pendingTasks {
+    width: 80vw;
+    padding: 5%;
+    background-color: blue;
+    border-radius: 20px;
+
+}
+
+.fulfilledTasks {
+    width: 33vw;
+    padding: 5%;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.failedTasks {
+    width: 33vw;
+    padding: 5%;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+
+#tareaNueva {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#encargado {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.date {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10%;
+    margin-bottom: 40px;
+
+}
+
+
+
+li {
+    list-style: none;
+    line-height: 1.5;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 40px;
+
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.tareasPendientesTitulo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.hechoFallido {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.botonMandar {
+    height: 15px;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+select {
+    height: 40px;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.agregarTarea {
+    margin-bottom: 40px;
+}
+
+.encargado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fecha {
+    display: flex;
+}
+
+h3 {
+    padding-bottom: 30px;
+}

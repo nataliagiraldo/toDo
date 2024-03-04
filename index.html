@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <form class="createTask" id="taskForm">
+            <h2>Tarea</h2>
+
+            <div class="agregarTarea">
+                <input type="text" name="tareaNueva" id="tareaNueva" required>
+                <input type="submit" value="Agregar" class="botonMandar">
+            </div>
+
+            <div class="date">
+                <h4>Fecha de inicio</h4>
+                <h4>Fecha finalización</h4>
+
+                <div class="fecha">
+                    <input type="date" name="fechaInicio" id="fechaInicio" required>
+                </div>
+
+                <div class="fecha">
+                    <input type="date" name="fechaFin" id="fechaFin" required>
+                </div>
+            </div>
+
+            <div class="incharge">
+                <h3>Encargado:</h3>
+
+                <div class="encargado">
+                    <div>
+                        <input type="text" name="encargado" id="encargado" required>
+                    </div>
+
+                    <div>
+                        <select name="prioridad" id="prioridad">
+                            <option value="urgent">Urgente</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <lista-tareas titulo="Pendientes" modifyable="true" id="listaPendiente" say="hola mundo"></lista-tareas>
+        <lista-tareas titulo="Hecho" modifyable="false" id="listaHecho" say="hola hecho"></lista-tareas>
+        <lista-tareas titulo="Fallado" modifyable="false" id="listaFallo" say="adios mundo"></lista-tareas>
+
+        
+    </main>
+    
+
+
+</body>
+
+</html>
